@@ -48,33 +48,28 @@ Uma skill para o seu assistente de código que impede que ele enterre a resposta
 
 ## Depois
 
-> Edite `src/auth.ts:42` para atualizar a validação do token.
+> Corrigi a validação do token em `src/auth.ts:42` e rodei os testes de autenticação.
 >
-> 1. Abra `src/auth.ts`
-> 2. Substitua `verifyToken` (linhas 42–58) pelo trecho abaixo
-> 3. Rode `npm test -- auth.spec.ts`
->
-> Próximo passo: cole a primeira linha de falha se algum teste quebrar.
+> Verificado: 18 testes passaram. A dependência desatualizada ficou estacionada; ela não bloqueia esta correção.
 
 </td>
 </tr>
 </table>
 
 
-## As regras
+## O comportamento
 
-10 regras. Texto completo no [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+Texto completo no [SKILL.md](../../skills/i-have-adhd/SKILL.md).
 
-1. Comece pela próxima ação.
-2. Numere tarefas de múltiplos passos.
-3. Termine com um próximo passo concreto.
-4. Corte as tangentes.
-5. Reafirme o estado atual a cada turno.
-6. Estimativas de tempo específicas (minutos, não "um pouco").
-7. Deixe as conquistas visíveis.
-8. Erros relatados de forma objetiva.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo. Sem recapitulação. Sem frases de encerramento.
+1. Faça o trabalho que cabe ao agente em vez de devolvê-lo ao usuário.
+2. Coloque primeiro a resposta, o resultado, a recomendação ou o bloqueio.
+3. Torne a primeira ação exigida do usuário pequena e concreta.
+4. Mantenha um único conjunto de trabalho visível: agora, próximo e estacionado.
+5. Restaure o contexto após interrupções sem repetir todo o histórico.
+6. Recomende uma opção padrão antes de listar alternativas.
+7. Separe progresso verificado de falhas e desconhecidos.
+8. Estime o tempo só quando isso ajudar uma decisão, mostrando a incerteza.
+9. Termine com um próximo passo apenas quando ele for realmente necessário.
 
 ## Personalize
 

@@ -2,7 +2,7 @@
   <img src="./logo.png" alt="i-have-adhd" width="140" />
 </p>
 <p align="center">
-  <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
+  <strong align="center">Less friction between “I know” and “it’s done.” No ADHD diagnosis needed.</strong>
 </p>
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
@@ -34,9 +34,12 @@ Or 🔗 [check the installation instructions](INSTALL.md).
 
 ## What it does
 
-A skill for your coding assistant that stops it from burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A skill for coding assistants that helps with the parts after the answer: starting, choosing, resuming after an interruption, and finishing. When the assistant can safely do the work, it does the work instead of handing you a checklist.
+
+It still cuts filler. It no longer treats every response as the same formatting problem.
 
 [Kacper Rutkiewicz | AI Made Simple](https://youtu.be/NEl8kPWZP_Y) has made a good breakdown of an earlier version of the skill.
+
 ## What changes
 
 
@@ -46,7 +49,11 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## Before
 
-> Great question! Let me think about this. Your auth flow has a few moving pieces: the middleware, the token verification, and the cookie handling. Looking at `src/auth.ts`, the `verifyToken` function (around lines 42-58) seems to be using an older `jsonwebtoken` API. One approach would be to update the package and rewrite that function. After making the change, you'd want to run the auth tests to confirm nothing breaks. By the way, you might also want to look at your dependency versions overall. Hope this helps! Let me know if you want to dig deeper.
+> Edit `src/auth.ts:42` to update token validation.
+>
+> 1. Open `src/auth.ts`
+> 2. Replace `verifyToken`
+> 3. Run `npm test -- auth.spec.ts`
 
 </td>
 
@@ -54,33 +61,28 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## After
 
-> Edit `src/auth.ts:42` to update the token validation.
+> Fixed token validation in `src/auth.ts:42` and ran the auth tests.
 >
-> 1. Open `src/auth.ts`
-> 2. Replace `verifyToken` (lines 42–58) with the snippet below
-> 3. Run `npm test -- auth.spec.ts`
->
-> Next: paste the first failing line if any test fails.
+> Verified: 18 passed. The stale dependency is parked; it does not block this fix.
 
 </td>
 </tr>
 </table>
 
 
-## The rules
+## The behavior
 
-10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
 
-1. Lead with the next action.
-2. Number multi-step tasks.
-3. End with one concrete next step.
-4. Suppress tangents.
-5. Restate state every turn.
-6. Specific time estimates (minutes, not "a bit").
-7. Make wins visible.
-8. Matter-of-fact errors.
-9. Cap lists to 5 items.
-10. No preamble. No recap. No closers.
+1. Do agent-owned work instead of delegating it back.
+2. Put the answer, result, recommendation, or blocker first.
+3. Make the reader's required starting move concrete and small.
+4. Keep one live working set: now, next, and parked.
+5. Restore context after interruptions without replaying the whole history.
+6. Recommend a default before listing alternatives.
+7. Separate verified progress from failures and unknowns.
+8. Estimate time only when it helps a decision, with honest uncertainty.
+9. End with one next move only when a next move is actually needed.
 
 ## Tune it
 

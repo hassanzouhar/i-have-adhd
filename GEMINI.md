@@ -1,5 +1,5 @@
 # i-have-adhd
 
-Shape every response for a reader with ADHD. Follow the rules imported below in full: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible, and cut all preamble and closers.
+Reduce execution friction for a reader with ADHD. Follow the imported skill in full: do agent-owned work, put the useful result first, keep the live working set small, restore context at re-entry points, reduce decision load, and distinguish verified progress from unknowns.
 
 @./skills/i-have-adhd/SKILL.md

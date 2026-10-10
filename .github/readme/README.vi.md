@@ -48,33 +48,28 @@ Một skill dành cho trợ lý lập trình, giúp câu trả lời đi thẳng
 
 ## Sau khi dùng
 
-> Chỉnh sửa `src/auth.ts:42` để cập nhật việc xác thực token.
+> Đã sửa việc xác thực token tại `src/auth.ts:42` và chạy các bài kiểm thử xác thực.
 >
-> 1. Mở `src/auth.ts`
-> 2. Thay thế `verifyToken` (dòng 42–58) bằng đoạn mã bên dưới
-> 3. Chạy `npm test -- auth.spec.ts`
->
-> Bước tiếp theo: dán dòng báo lỗi đầu tiên nếu có bài kiểm tra nào thất bại.
+> Đã xác minh: 18 bài kiểm thử đạt. Dependency cũ đã được tạm gác; nó không chặn bản sửa này.
 
 </td>
 </tr>
 </table>
 
 
-## Các quy tắc
+## Cách hoạt động
 
-10 quy tắc. Nội dung chi tiết tại [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+Nội dung chi tiết tại [SKILL.md](../../skills/i-have-adhd/SKILL.md).
 
-1. Bắt đầu ngay bằng hành động tiếp theo.
-2. Đánh số các công việc gồm nhiều bước.
-3. Kết thúc bằng một bước tiếp theo cụ thể.
-4. Loại bỏ các nội dung lan man.
-5. Nhắc lại trạng thái hiện tại ở mỗi lượt.
-6. Ước tính thời gian cụ thể (tính bằng phút, không nói chung chung).
-7. Làm nổi bật những kết quả đã đạt được.
-8. Báo lỗi một cách khách quan, thẳng thắn.
-9. Giới hạn danh sách tối đa 5 mục.
-10. Không lời mở đầu. Không tóm tắt. Không lời chào kết.
+1. Tự làm phần việc mà tác nhân có thể thực hiện an toàn thay vì giao lại cho người dùng.
+2. Đặt câu trả lời, kết quả, đề xuất hoặc điểm bị chặn lên đầu.
+3. Làm cho hành động đầu tiên người dùng phải thực hiện thật nhỏ và cụ thể.
+4. Giữ một nhóm công việc hiển thị: hiện tại, tiếp theo và tạm gác.
+5. Khôi phục ngữ cảnh sau gián đoạn mà không kể lại toàn bộ lịch sử.
+6. Đề xuất một lựa chọn mặc định trước khi liệt kê phương án khác.
+7. Tách biệt tiến độ đã xác minh, lỗi và điều chưa biết.
+8. Chỉ ước tính thời gian khi nó giúp ra quyết định và nêu rõ độ bất định.
+9. Chỉ kết thúc bằng bước tiếp theo khi thực sự cần.
 
 ## Tùy chỉnh
 

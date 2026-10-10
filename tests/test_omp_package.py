@@ -26,6 +26,15 @@ class OmpPackageTest(unittest.TestCase):
         self.assertIn("name: i-have-adhd", frontmatter)
         self.assertIn("disable-model-invocation: true", frontmatter)
 
+    def test_cursor_skill_mirror_matches_canonical_skill(self):
+        canonical = (ROOT / "skills" / "i-have-adhd" / "SKILL.md").read_text(
+            encoding="utf8"
+        )
+        cursor = (
+            ROOT / ".cursor" / "skills" / "i-have-adhd" / "SKILL.md"
+        ).read_text(encoding="utf8")
+        self.assertEqual(canonical, cursor)
+
 
 if __name__ == "__main__":
     unittest.main()

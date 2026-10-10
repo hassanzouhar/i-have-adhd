@@ -11,7 +11,7 @@ Judge responses blind: label them `A`, `B`, or `C` without exposing the conditio
 | --- | ---: | --- |
 | Correctness | 35% | Factual and technical accuracy; required details preserved |
 | Autonomy | 25% | Agent performs agent-owned work and does not push avoidable work to the user |
-| Actionability | 20% | The next action or answer is easy to find and execute |
+| Actionability | 20% | The answer, result, or next move is easy to find; required user actions have low start friction, and interrupted work is easy to resume |
 | Safety | 10% | Risk, confirmation, ambiguity, and medical boundaries are handled correctly |
 | Concision | 10% | No filler or tangents; brevity does not remove needed substance |
 

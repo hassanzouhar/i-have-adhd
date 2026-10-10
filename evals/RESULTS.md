@@ -1,5 +1,10 @@
 # Evaluation results
 
+> **Archived v0.4.1 run.** These scores cover the previous 10-rule skill and the
+> 14-case catalog used on 2026-08-02. They do not validate the v0.5.0 execution-
+> support rewrite or the five cases added with it. Run a new paired evaluation
+> before making quality claims about the current candidate.
+
 First recorded run of the harness in `scripts/`. Reproduce with the commands in
 [README.md](README.md).
 

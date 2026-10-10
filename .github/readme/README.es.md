@@ -33,7 +33,7 @@ O 🔗 [consulta las instrucciones de instalación](../../INSTALL.md).
 
 ## Qué hace
 
-Una *skill* para tu asistente de código que evita que entierre la respuesta. Acción primero. Pasos numerados. Nada de "¡Espero que esto ayude!".
+Una *skill* que reduce la fricción entre entender y terminar: ayuda a empezar, elegir, retomar tras una interrupción y cerrar el trabajo. Si el asistente puede hacer la tarea de forma segura, la hace en lugar de devolverte una lista de instrucciones.
 
 
 ## Qué cambia
@@ -53,33 +53,28 @@ Una *skill* para tu asistente de código que evita que entierre la respuesta. Ac
 
 ## Después
 
-> Edita `src/auth.ts:42` para actualizar la validación del token.
+> Corregí la validación del token en `src/auth.ts:42` y ejecuté las pruebas de autenticación.
 >
-> 1. Abre `src/auth.ts`
-> 2. Reemplaza `verifyToken` (líneas 42–58) con el fragmento a continuación
-> 3. Ejecuta `npm test -- auth.spec.ts`
->
-> Siguiente paso: pega la primera línea que falle si alguna prueba falla.
+> Verificado: 18 pruebas aprobadas. La dependencia desactualizada queda aparcada; no bloquea esta corrección.
 
 </td>
 </tr>
 </table>
 
 
-## Las reglas
+## El comportamiento
 
-10 reglas. Texto completo en [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+Texto completo en [SKILL.md](../../skills/i-have-adhd/SKILL.md).
 
-1. Empieza con la siguiente acción.
-2. Numera las tareas de varios pasos.
-3. Termina con un paso concreto a seguir.
-4. Suprime las tangentes.
-5. Reafirma el estado en cada turno.
-6. Estimaciones de tiempo específicas (minutos, no "un poco").
-7. Haz visibles los logros.
-8. Errores mostrados de forma directa (matter-of-fact).
-9. Limita las listas a 5 elementos.
-10. Sin preámbulos. Sin resúmenes. Sin frases de cierre.
+1. Haz el trabajo que le corresponde al agente en vez de devolvérselo al usuario.
+2. Pon primero la respuesta, el resultado, la recomendación o el bloqueo.
+3. Haz que el primer paso requerido del usuario sea pequeño y concreto.
+4. Mantén un único conjunto de trabajo visible: ahora, después y aparcado.
+5. Restaura el contexto tras interrupciones sin repetir todo el historial.
+6. Recomienda una opción por defecto antes de mostrar alternativas.
+7. Separa el progreso verificado de los fallos y lo desconocido.
+8. Estima el tiempo solo si ayuda a decidir y muestra la incertidumbre.
+9. Termina con un siguiente paso solo cuando realmente haga falta.
 
 ## Ajustarlo
 

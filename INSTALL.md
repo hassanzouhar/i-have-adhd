@@ -37,20 +37,19 @@ Add to `~/.gemini/GEMINI.md`:
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 
 </details>
@@ -217,20 +216,19 @@ Add to `~/.codex/AGENTS.md`:
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 
 </details>
@@ -280,20 +278,19 @@ Add the block to `~/.grok/AGENTS.md`, or drop it in `~/.grok/rules/i-have-adhd.m
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 
 </details>
@@ -402,20 +399,19 @@ Add the block below to `.github/copilot-instructions.md` in the project (Copilot
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 
 </details>
@@ -467,20 +463,19 @@ Add to the `AGENTS.md` in your working directory (Hermes loads it per workdir), 
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 
 </details>
@@ -787,20 +782,19 @@ Add to your personal `~/.config/zed/AGENTS.md`:
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 
 </details>
@@ -857,20 +851,19 @@ Paste this into your agent's persistent rules file. Cursor: **Settings → Rules
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+The reader benefits from ADHD-friendly execution support:
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists to 5 items.
-10. No preamble, no recaps, no closers.
+1. Do authorized work the agent can safely perform; do not hand it back as a checklist.
+2. Put the answer, result, recommendation, blocker, or observed error cause first.
+3. When the reader must act and is stuck, name one concrete starting move.
+4. Keep the visible working set small: one item now, up to two next, one parked note.
+5. Restore context after interruptions with Goal, Done, Now, and Blocked by.
+6. Recommend one default before showing at most three alternatives and their trade-offs.
+7. Separate verified done, running or unverified, and blocked or failed.
+8. Estimate time only when useful; use a range and name the largest uncertainty.
+9. End with one next move only when the reader still needs to act.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Safety, accuracy, user instructions, and exact output formats win. Explain fully when asked. Confirm risky actions when required. Do not diagnose ADHD or treat these preferences as universal medical facts.
 ```
 </details>
 

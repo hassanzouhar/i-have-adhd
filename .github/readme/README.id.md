@@ -45,33 +45,28 @@ Sebuah skill untuk asisten coding-mu yang mencegahnya mengubur jawaban di tengah
 
 ## Sesudahnya
 
-> Edit `src/auth.ts:42` untuk memperbarui validasi token.
+> Validasi token di `src/auth.ts:42` sudah diperbaiki dan tes autentikasi sudah dijalankan.
 >
-> 1. Buka `src/auth.ts`
-> 2. Ganti `verifyToken` (baris 42–58) dengan cuplikan di bawah ini
-> 3. Jalankan `npm test -- auth.spec.ts`
->
-> Langkah selanjutnya: tempel baris error pertama jika ada tes yang gagal.
+> Terverifikasi: 18 tes lulus. Dependensi lama diparkir; hal itu tidak menghalangi perbaikan ini.
 
 </td>
 </tr>
 </table>
 
 
-## Aturannya
+## Perilakunya
 
-10 aturan. Teks lengkap ada di [SKILL.md](../../skills/i-have-adhd/SKILL.md).
+Teks lengkap ada di [SKILL.md](../../skills/i-have-adhd/SKILL.md).
 
-1. Mulai dengan langkah selanjutnya.
-2. Beri nomor pada tugas yang memiliki beberapa langkah.
-3. Akhiri dengan langkah selanjutnya yang konkret.
-4. Potong pembahasan yang melebar (tidak relevan).
-5. Tegaskan kembali status terkini di setiap giliran.
-6. Berikan estimasi waktu yang spesifik (dalam menit, bukan "sebentar").
-7. Buat pencapaian terlihat jelas.
-8. Laporkan error secara objektif.
-9. Batasi daftar maksimal 5 item.
-10. Tanpa pembukaan. Tanpa ringkasan ulang. Tanpa kalimat penutup.
+1. Kerjakan tugas yang dapat dilakukan agen dengan aman, bukan mengembalikannya sebagai daftar instruksi.
+2. Tampilkan jawaban, hasil, rekomendasi, atau hambatan terlebih dahulu.
+3. Buat tindakan pertama yang harus dilakukan pengguna menjadi kecil dan konkret.
+4. Pertahankan satu set kerja yang terlihat: sekarang, berikutnya, dan diparkir.
+5. Pulihkan konteks setelah interupsi tanpa mengulang seluruh riwayat.
+6. Rekomendasikan satu pilihan bawaan sebelum menampilkan alternatif.
+7. Bedakan kemajuan terverifikasi, kegagalan, dan hal yang belum diketahui.
+8. Perkirakan waktu hanya jika membantu keputusan dan jelaskan ketidakpastiannya.
+9. Akhiri dengan satu langkah berikutnya hanya jika benar-benar diperlukan.
 
 ## Sesuaikan (Kustomisasi)
 

@@ -1,6 +1,6 @@
 {
   "name": "i-have-adhd",
-  "version": "0.4.1",
-  "description": "ADHD-friendly output shaping for Qwen Code: action first, numbered steps, no tangents, and visible progress.",
+  "version": "0.5.0",
+  "description": "ADHD-friendly execution support for Qwen Code: act when authorized, prioritize, restore context, and show verified progress.",
   "skills": "skills"
 }
